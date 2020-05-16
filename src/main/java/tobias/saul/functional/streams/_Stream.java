@@ -26,6 +26,14 @@ public class _Stream {
 			.map(name -> name.length())
 			.collect(Collectors.toList())
 			.forEach(System.out::println);
+		
+		//does all person's gender in stream match gender female
+		System.out.println(people.stream()
+			.allMatch(person -> Gender.FEMALE.equals(person.gender)));
+		
+		//does any person's gender in stream match gender female
+		System.out.println(people.stream()
+			.anyMatch(person -> Gender.FEMALE.equals(person.gender)));
 			
 		
 	}
