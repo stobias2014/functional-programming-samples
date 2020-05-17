@@ -2,7 +2,7 @@ package tobias.saul.functional.finalsection;
 
 import java.util.function.Consumer;
 
-public class Main {
+public class Callback {
 	
 	public static void main(String[] args) {
 		
